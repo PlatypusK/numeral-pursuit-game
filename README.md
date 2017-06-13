@@ -8,3 +8,5 @@ When placed, the app checks if that placement is a valid solution for the curren
 A point is scored for each successfully placed tile. The players take turns to attempt tile placements
 
 Once the whole board is filled, the winner is the one with the most points.
+
+The game is played using an appengine server as an intermediary between the two players. The server is located in a separate repository
