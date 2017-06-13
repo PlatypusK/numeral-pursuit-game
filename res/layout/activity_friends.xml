@@ -1,0 +1,17 @@
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/viewflipper_friends_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendsActivity" >
+
+    <include
+        android:id="@+id/game_view"
+        layout="@layout/activity_friends_list" />
+
+    <include
+        android:id="@+id/bookView"
+        layout="@layout/activity_friends_flipped" />
+
+</ViewFlipper>

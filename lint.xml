@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/games/numbercrunch/PlayRNGAct.java" />
+        <ignore path="src/com/games/numbercrunch/PlayRNGAct.java" />
+    </issue>
+</lint>

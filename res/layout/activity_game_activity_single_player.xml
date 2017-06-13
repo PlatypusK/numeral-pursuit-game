@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/viewFlipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:screenOrientation="portrait" >
+
+
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip" >
+
+            <view
+                android:id="@+id/game_surface_view"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                class="com.games.numeral.pursuit.GameActivitySinglePlayer$MySurfaceView" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:orientation="vertical"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip" >
+
+            <ImageButton
+                android:id="@+id/button_trash"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/drawable_trash"
+                android:contentDescription="@string/forfeit_game"
+                android:text="@string/forfeit_game"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textview_tiles_correct_vs_missed"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.games.customviews.MyAdView
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a151f991225b3fd"
+            ads:loadAdOnCreate="true"
+            ads:testDevices="635E58EBB675D93CEBDE6BFEE1F91A6A,B845A1EF593239CA4A44AEAB2E36BCB5"
+            android:visibility="visible" >
+        </com.games.customviews.MyAdView>
+
+        <ListView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="9" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/comment_input"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="10"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/button_send_message"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/arrow_right"
+                android:contentDescription="@string/send_message_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ViewFlipper>

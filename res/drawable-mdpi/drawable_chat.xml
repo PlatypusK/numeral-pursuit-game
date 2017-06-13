@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.games.numeral.pursuit.adfree">
+
+    <item android:drawable="@drawable/chat_pressed" android:state_pressed="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/chat_new_messages" app:state_new_message="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/chat_no_messages"/>
+    <!-- default -->
+
+</selector>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.games.numeral.pursuit.adfree"
+    android:versionCode="9"
+    android:versionName="2014.09.19" >
+
+    <permission
+        android:name="android.permission.STATUS_BAR_SERVICE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.games.numeral.pursuit.adfree.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+   
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.games.numeral.pursuit.adfree.permission.C2D_MESSAGE" />
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:name="com.games.numeral.pursuit.adfree.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.games.numeral.pursuit.adfree.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.games.numeral.pursuit.adfree" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.games.numeral.pursuit.adfree.AbstractAlarmReceiver$RepeatRegistration" />
+
+        <service android:name="com.games.numeral.pursuit.adfree.GCMIntentService" />
+
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.GameActivity"
+            android:label="@string/game_activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActiveGamesAct" />
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.FinishedGamesActivity"
+            android:label="@string/finished_games_activity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.PlayRNGAct"
+            android:label="@string/title_activity_srng_act"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.ActiveGamesAct"
+            android:label="@string/title_activity_active_games" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.FriendsActivity"
+            android:label="@string/title_activity_friends" >
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.InvitedToGameActivity"
+            android:label="@string/title_activity_invited_to_game" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
+        </activity>
+        <activity
+            android:name="com.games.numeral.pursuit.adfree.GameActivitySinglePlayer"
+            android:label="@string/title_activity_game_activity_single_player" >
+        </activity>
+    </application>
+
+</manifest>

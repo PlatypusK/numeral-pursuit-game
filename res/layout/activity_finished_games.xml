@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/viewflipper_finished_games"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/activity_finished_games_list"
+        layout="@layout/activity_finished_games_list" />
+
+    <include
+        android:id="@+id/activity_finished_games_flipped"
+        layout="@layout/activity_finished_games_flipped" />
+
+</ViewFlipper>

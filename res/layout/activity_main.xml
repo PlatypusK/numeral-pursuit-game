@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_drawable"
+        android:text="@string/friends"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_drawable"
+        android:text="@string/button_start_rng"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_drawable"
+        android:text="@string/button_see_current_games"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_drawable"
+        android:text="@string/finished_games"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_drawable"
+        android:text="@string/settings"
+        android:textColor="#FFFFFF" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>

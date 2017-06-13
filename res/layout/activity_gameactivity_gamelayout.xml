@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/gamelayout_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:orientation="vertical"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip" >
+
+        <TextView
+            android:id="@+id/game_activity_client_name"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gameactivity_textview_dash"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dash"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/game_activity_opponent_name"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip" >
+
+        <view
+            android:id="@+id/game_surface_view"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.games.numeral.pursuit.GameActivity$MySurfaceView" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="vertical"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip" >
+
+        <ImageButton
+            android:id="@+id/button_forfeit"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/drawable_forfeit"
+            android:contentDescription="@string/forfeit_game"
+            android:text="@string/forfeit_game"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/button_help"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/drawable_help"
+            android:contentDescription="@string/help" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vert_text_score_player"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/image_switcher_whos_turn"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@drawable/drawable_lineshape"
+                android:text="@string/forfeit_game"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.games.customviews.ChatImageButton
+            android:id="@+id/button_chat"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/drawable_chat"
+            android:contentDescription="@string/chat_button" />
+
+        <ImageButton
+            android:id="@+id/button_refresh"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/drawable_refresh"
+            android:contentDescription="@string/refresh_game" />
+    </TableRow>
+
+</TableLayout>

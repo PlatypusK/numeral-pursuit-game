@@ -1,0 +1,4 @@
+random.png http://www.robinweatherall.eu/
+background.png http://www.freedigitalphotos.net/
+friendly.png www.iconsdb.com link not necessary
+launcher icon http://www.iconarchive.com/artist/oxygen-icons.org.html

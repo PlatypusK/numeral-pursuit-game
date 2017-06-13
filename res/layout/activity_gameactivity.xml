@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/viewFlipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/game_view"
+        layout="@layout/activity_gameactivity_gamelayout" />
+
+    <include
+        android:id="@+id/bookView"
+        layout="@layout/activity_gameactivity_chat" />
+
+</ViewFlipper>

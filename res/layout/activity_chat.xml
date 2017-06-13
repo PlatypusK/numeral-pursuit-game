@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <ListView
+        android:id="@+id/comments_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/comment_input"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_weight="10"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/button_send_message"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/arrow_right"
+            android:contentDescription="@string/send_message_button" />
+    </LinearLayout>
+
+</LinearLayout>

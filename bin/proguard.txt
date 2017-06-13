@@ -1,0 +1,57 @@
+# view res/layout/activity_gameactivity_gamelayout.xml #generated:105
+-keep class com.games.customviews.ChatImageButton { <init>(...); }
+
+# view res/layout/activity_game_activity_single_player.xml #generated:61
+-keep class com.games.customviews.MyAdView { <init>(...); }
+
+# view res/layout/activity_gameactivity_gamelayout.xml #generated:51
+-keep class com.games.numeral.pursuit.GameActivity$MySurfaceView { <init>(...); }
+
+# view res/layout/activity_game_activity_single_player.xml #generated:22
+-keep class com.games.numeral.pursuit.GameActivitySinglePlayer$MySurfaceView { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.games.numeral.pursuit.adfree.AbstractAlarmReceiver$RepeatRegistration { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.games.numeral.pursuit.adfree.ActiveGamesAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.games.numeral.pursuit.adfree.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.games.numeral.pursuit.adfree.FinishedGamesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.games.numeral.pursuit.adfree.FriendsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.games.numeral.pursuit.adfree.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.games.numeral.pursuit.adfree.GCMReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.games.numeral.pursuit.adfree.GameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class com.games.numeral.pursuit.adfree.GameActivitySinglePlayer { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.games.numeral.pursuit.adfree.InvitedToGameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.games.numeral.pursuit.adfree.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.games.numeral.pursuit.adfree.MyApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.games.numeral.pursuit.adfree.PlayRNGAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.games.numeral.pursuit.adfree.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class com.google.ads.AdActivity { <init>(...); }
+
